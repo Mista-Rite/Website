@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Emmanuel Uka" content="This is about Website Develoment of a desktop and mobile.">
+    
+	<title>My Css Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="Signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu ()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Crazy Radiness</h1>
+                    <h1 class="large">Made for Developers</h1>
+                </div>
+                <form>
+                    <div class="leftside-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="Username" />
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="password" placeholder="Password" />
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightside-col">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hlGGW0nsWNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <header>
+        <h1 class="section2header">The Standard of Awsomeness</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Andela.png" />
+                    </div>
+                    <label>Chat with me</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Andela.png" />
+                    </div>
+                    <label>Learn To Code</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="Andela.png" />
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnmore">Learn More </button>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus
+                        massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt
+                        arcu. </p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeicon">
+                    <img src="andela-footer.jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobilestack">
+                <h1>Goals</h1>
+                <ul>
+                    <li>Rasing the next future Generation</li>
+                    <li>Improving The Web Technology</li>
+                    <li>Building the the Platform for great Developers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobilestack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+            <div class="col-3 mobilestack">
+                <h1>About Us</h1>
+                <ul>
+                    <li>Mentoring Beginners</li>
+                    <li>Rasing Startup</li>
+                    <li>Opening opportunity for African Developers</li>
+                </ul>
+            </div>
+            <div class="col-3 mobilestack">
+                <h1>Sponsors</h1>
+                <ul>
+                    <li>Google</li>
+                    <li>Facebook</li>
+                    <li>OpenClassRoom</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /******* Change topnav to topnav.responsive **********/
+            } else {
+                x.className = "topnav";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
